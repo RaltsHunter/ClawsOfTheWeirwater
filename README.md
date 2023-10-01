@@ -1,5 +1,8 @@
 # ClawsOfTheWeirwater
- A work of medieval detective interactive fiction
+
+ Claws of the Weirwater
+ 
+ -A work of medieval detective interactive fiction-
 
  Narrative- Alethea Saliba
 
