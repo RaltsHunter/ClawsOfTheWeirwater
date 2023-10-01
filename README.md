@@ -9,4 +9,4 @@
 
 Copyright 2023. All rights reserved. 
 
-No portion of this work is permitted to be used in the training or development of artificial intelligence programs.
+No portion of this work or any constituient part is permitted to be used in the training or development of artificial intelligence programs.
