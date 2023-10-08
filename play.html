@@ -9,7 +9,22 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Claws of the Weirwater.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Claws of the Weirwater" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="2CCDFF24-8AFE-433A-A6FB-3BA058435A05" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Opening" tags="" position="1000,0" size="100,100">Claws of the Weirwater
+<tw-storydata name="Claws of the Weirwater" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="2CCDFF24-8AFE-433A-A6FB-3BA058435A05" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+  	display: none;
+}
+
+tw-passage {
+   text-align: center; 
+}
+
+tw-passage{
+color: black;
+}
+
+tw-story {
+ background-image:url("https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/paper_background.png");
+ background-size:cover;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Opening" tags="" position="1000,0" size="100,100">(css: &quot;font-size: 150%;&quot;)[&#39;&#39;Claws of the Weirwater&#39;&#39;]
 
 A Game by Alethea Saliba, Watkin Jones, and Emily Adam-Oro
 
@@ -38,6 +53,8 @@ It is a crisp autumn morning, overcast skies hinting at inclement weather to com
 Your liege lord, the Duke of Crentwood, has sent you to investigate a killing that bears the hallmarks of a werewolf attack. As the duchy&#39;s foremost expert in supernatural beasts, your task is to figure out who or what is behind the killing, and render a judgement. 
 
 Do not fail.
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town_cloudy_paper.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 [[Proceed into town|The Town of Weirwater]]
 
@@ -85,6 +102,8 @@ You decide it is best to interview the persons of interest sooner rather than la
 
 (set: $time to $time + 1)</tw-passagedata><tw-passagedata pid="8" name="Meeting Matilde" tags="" position="1800,275" size="100,100">&#39;&#39;A Kindly Woman&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 After a short stroll you find yourself at Matilde&#39;s inn, and make your way inside. The main room is dimly lit, and smells of ale. At a table counting a small pile of coins is a portly woman with a kind face. As you enter, she looks up and beckons you over. You approach at her whim.
 
 &quot;We don&#39;t get many passing through these parts. I take it yer here about the killing?&quot; She inquires, which you answer with a nod. The woman&#39;s face darkens a bit.
@@ -103,7 +122,9 @@ Now you may begin your interrogation in earnest, but you have limited time to qu
 
 (set:$peopleTalk to $peopleTalk + 1)</tw-passagedata><tw-passagedata pid="9" name="Meeting Dirk" tags="" position="3050,250" size="100,100">&#39;&#39;Rugged and Cold&#39;&#39;
 
-You cross town and make your way to the tavern the bugermeister informed you Dirk Ustenfell frequents. You find the woodsman milling about in front of the tavern, ax resting on his shoulder. He eyes you warily as you approach. (if: $time is 2)[He seems unphased by the rain coming down.]
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
+You cross town and make your way to the tavern the burgermeister informed you Dirk Ustenfell frequents. You find the woodsman milling about in front of the tavern, ax resting on his shoulder. He eyes you warily as you approach. (if: $time is 2)[He seems unphased by the rain coming down.]
 
 &quot;I reckon yer lookin&#39; to speak with me. Yeah, I know yer look, yer kind. A yuppy paid by the Duke to stoke fear an&#39; hatred in communities. To make us fear each other, lookin&#39; fer monsters where there ain&#39;t none. Keepin&#39; us under yer yoke with fear. Keepin&#39; our //coinpurses// under yer yoke. So get to talkin&#39;, get it over with quick. I ain&#39;t gonna answer more than one or two queries before I go and get me&#39;self a drink. And I swear, if ye follow me int&#39; the tavern, there will be trouble.&quot;
 
@@ -117,6 +138,8 @@ You do not doubt the man is serious with his threat, and you figure you ought to
 
 
 (set:$peopleTalk to $peopleTalk + 1)</tw-passagedata><tw-passagedata pid="10" name="Meeting Alka" tags="" position="4250,125" size="100,100">&#39;&#39;Gentle and Intense&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 You make your way across town to the workshop where Alka the fletcher goes about their work. You find them in the workshop whittling away at thin sticks, attaching feathers, and doing a myriad of other processes that you assume go into crafting arrows. They glance at you, face stern, and gestures for you to stay where you are.
 
@@ -134,6 +157,8 @@ The fletcher&#39;s voice is softer than you&#39;d expect for one of such harsh c
 
 (set: $peopleTalk to $peopleTalk + 1)</tw-passagedata><tw-passagedata pid="11" name="Crime Scene 1" tags="" position="700,800" size="100,100">&#39;&#39;A Grisly Scene&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You approach the woodshed and gently push open the door. Immediately you are hit by the stench: while it is not hot out, this corpse has been here for over a day. It does not help that the poor man&#39;s bowels have been ripped apart. You turn away for a moment and hold back a retch. You steel yourself and face the scene again. 
 
 The corpse of Ragvald Burke is slumped against a pile of chopped logs. Blood is everywhere. There is much you need to examine, and only so much time.
@@ -147,6 +172,8 @@ The corpse of Ragvald Burke is slumped against a pile of chopped logs. Blood is 
 
 (set: $time to $time + 1)</tw-passagedata><tw-passagedata pid="12" name="Search for werewolf markings on the corpse" tags="" position="700,1000" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. But that sort of savagery is... disconcerting.
@@ -156,6 +183,8 @@ You settle your thoughts. There is more to be done.
 [[Examine the corpse&#39;s wounds|Examine wounds 2]]
 
 [[Check the immediate area of signs of werewolf activity|Check area 3]]</tw-passagedata><tw-passagedata pid="13" name="Examine the corpse&#39;s wounds" tags="" position="400,1000" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 You lean in close to the victims torn apart stomach, holding your breath in attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -169,6 +198,8 @@ You settle your thoughts. There is more to be done.
 
 [[Check the immediate area for signs of werewolf activity|check area 2]]</tw-passagedata><tw-passagedata pid="14" name="Check the immediate area for signs of werewolf activity" tags="" position="1000,1000" size="100,100">&#39;&#39;Prints of a Curious Nature&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You take a look around the woodshed and look for anything amiss, beyond the corpse. Immediately your attention is drawn to a set of prints in the mud. It is a miracle they remain intact, given the amount of time that has passed since the killing. You crouch down and peer closely at the tracks. They are distinctly humanoid, not paw prints, yet they bear abnormal traits: long claws extend, and the proportions do not quite constitute that of a human foot. 
 
 You raise yourself to a standing position and tilt your head. Something isn&#39;t right about these prints though- they don&#39;t immediately register in your head as werewolf prints, despite bearing a remarkable similarity. Could it be- yes! They&#39;re far smaller than you&#39;d expect for werewolf prints. At least, far smaller than any you&#39;ve ever seen. They&#39;re almost like... a child&#39;s? But that can&#39;t be. No children turn into werewolves.
@@ -179,6 +210,8 @@ You put these concerns to the side. You have other matters to consider here.
 
 [[Search for werewolf markings on the corpse|Search markings 3]]</tw-passagedata><tw-passagedata pid="15" name="search markings 2" tags="" position="200,1200" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You kneel down beside the corpse, bracing yourself against the stench again, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. And coupled with the lack of consumption of any organs, it could even be probable. But if that were true... you dare not consider who would do such a thing.
@@ -188,6 +221,8 @@ You put these concerns off to the side. You have yet to check for signs of werew
 [[Check the immediate area for signs of werewolf actvity|Check area 4]]
 </tw-passagedata><tw-passagedata pid="16" name="check area 2" tags="" position="400,1200" size="100,100">&#39;&#39;Prints of a Curious Nature&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You take a look around the woodshed and look for anything amiss, beyond the corpse. Immediately your attention is drawn to a set of prints in the mud. It is a miracle they remain intact, given the amount of time that has passed since the killing. You crouch down and peer closely at the tracks. They are distinctly humanoid, not paw prints, yet they bear abnormal traits: long claws extend, and the proportions do not quite constitute that of a human foot. 
 
 You raise yourself to a standing position and tilt your head. Something isn&#39;t right about these prints though- they don&#39;t immediately register in your head as werewolf prints, despite bearing a remarkable similarity. Could it be- yes! They&#39;re far smaller than you&#39;d expect for werewolf prints. At least, far smaller than any you&#39;ve ever seen. They&#39;re almost like... a child&#39;s? But that can&#39;t be. No children turn into werewolves. Although that could explain the lack of consumption of any internal organs. 
@@ -195,6 +230,8 @@ You raise yourself to a standing position and tilt your head. Something isn&#39;
 You put these thoughts to the side. You still need to check the corpse for any distinctive werewolf markings.
 
 [[Search for werewolf markings on the corpse|search markings 4]]</tw-passagedata><tw-passagedata pid="17" name="Examine wounds 2" tags="" position="600,1200" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 You lean in close to the victims torn apart stomach, holding your breath in a further attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -206,6 +243,8 @@ You steel your resolve. You must examine the remainder of the woodshed for furth
 
 [[Check the immediate area for signs of werewolf activity|check area 5]]</tw-passagedata><tw-passagedata pid="18" name="Check area 3" tags="" position="800,1200" size="100,100">&#39;&#39;Prints of a Curious Nature&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You take a look around the woodshed and look for anything amiss, beyond the corpse. Immediately your attention is drawn to a set of prints in the mud. It is a miracle they remain intact, given the amount of time that has passed since the killing. You crouch down and peer closely at the tracks. They are distinctly humanoid, not paw prints, yet they bear abnormal traits: long claws extend, and the proportions do not quite constitute that of a human foot. 
 
 You raise yourself to a standing position and tilt your head. Something isn&#39;t right about these prints though- they don&#39;t immediately register in your head as werewolf prints, despite bearing a remarkable similarity. Could it be- yes! They&#39;re far smaller than you&#39;d expect for werewolf prints. At least, far smaller than any you&#39;ve ever seen. They&#39;re almost like... a child&#39;s? But that can&#39;t be. No children turn into werewolves. You consider the lack of fur in the wounds on the corpse. ... Are you dealing with a very young werewolf? One not quite old enough to shed, perhaps.
@@ -213,6 +252,8 @@ You raise yourself to a standing position and tilt your head. Something isn&#39;
 You take a moment and clear your head. You must still take a closer look at the corpse&#39;s wounds.
 
 [[Examine the corpse&#39;s wounds|Examine wounds 4]]</tw-passagedata><tw-passagedata pid="19" name="Examine wounds 3" tags="" position="1000,1200" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 You lean in close to the victims torn apart stomach, holding your breath in attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -225,6 +266,8 @@ Still, you must search for any further werewolf markings on the body before you 
 [[Search for werewolf markings on the corpse|search markings 5]]
 </tw-passagedata><tw-passagedata pid="20" name="Search markings 3" tags="" position="1200,1200" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. But that sort of savagery is... disconcerting.
@@ -236,6 +279,8 @@ That said, you still need to examine the corpse&#39;s stomach wounds before you 
 [[Examine the corpse&#39;s wounds|Examine wounds 5]]
 </tw-passagedata><tw-passagedata pid="21" name="Check area 4" tags="" position="200,1400" size="100,100">&#39;&#39;Prints of a Curious Nature&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You take a look around the woodshed and look for anything amiss, beyond the corpse. Immediately your attention is drawn to a set of prints in the mud. It is a miracle they remain intact, given the amount of time that has passed since the killing. You crouch down and peer closely at the tracks. They are distinctly humanoid, not paw prints, yet they bear abnormal traits: long claws extend, and the proportions do not quite constitute that of a human foot. 
 
 You raise yourself to a standing position and tilt your head. Something isn&#39;t right about these prints though- they don&#39;t immediately register in your head as werewolf prints, despite bearing a remarkable similarity. Could it be- yes! They&#39;re far smaller than you&#39;d expect for werewolf prints. At least, far smaller than any you&#39;ve ever seen. They&#39;re almost like... a child&#39;s? But that can&#39;t be. No children turn into werewolves. Although that could explain the lack of consumption of any internal organs, and the lack of fur in any wounds. A werewolf younger than any you&#39;ve ever seen.
@@ -244,6 +289,8 @@ But that flies in the face of all your past experience. Is a child werewolf real
 
 [[Consider what you&#39;ve learned|Results more sus]]</tw-passagedata><tw-passagedata pid="22" name="check area 5" tags="" position="600,1400" size="100,100">&#39;&#39;Prints of a Curious Nature&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You take a look around the woodshed and look for anything amiss, beyond the corpse. Immediately your attention is drawn to a set of prints in the mud. It is a miracle they remain intact, given the amount of time that has passed since the killing. You crouch down and peer closely at the tracks. They are distinctly humanoid, not paw prints, yet they bear abnormal traits: long claws extend, and the proportions do not quite constitute that of a human foot. 
 
 You raise yourself to a standing position and tilt your head. Something isn&#39;t right about these prints though- they don&#39;t immediately register in your head as werewolf prints, despite bearing a remarkable similarity. Could it be- yes! They&#39;re far smaller than you&#39;d expect for werewolf prints. At least, far smaller than any you&#39;ve ever seen. They&#39;re almost like... a child&#39;s? But that can&#39;t be. No children turn into werewolves. Although that could explain the lack of consumption of any internal organs, and the lack of fur in any wounds. A werewolf younger than any you&#39;ve ever seen.
@@ -251,6 +298,8 @@ You raise yourself to a standing position and tilt your head. Something isn&#39;
 But that flies in the face of all your past experience. Is a child werewolf really more likely than a human killer hiding their work?
 
 [[Consider what you&#39;ve learned|Results more sus]]</tw-passagedata><tw-passagedata pid="23" name="Examine wounds 4" tags="" position="800,1400" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 You lean in close to the victims torn apart stomach, holding your breath in a further attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -262,6 +311,8 @@ And yet you cannot shake the small prints you discovered. Perhaps this //is// a 
 
 [[Consider what you&#39;ve learned|results less sus]]</tw-passagedata><tw-passagedata pid="24" name="search markings 5" tags="" position="1000,1400" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You kneel down beside the corpse, bracing yourself against the stench again, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. And coupled with the lack of consumption of any organs, it could even be probable. But if that were true... you dare not consider who would do such a thing. But the small prints still nag at you. Couldn&#39;t this just be a child werewolf, one too young to shed?
@@ -270,6 +321,8 @@ There is so much to consider, and a great deal of it flies in the face of what y
 
 [[Consider what you&#39;ve learned|results less sus]]
 </tw-passagedata><tw-passagedata pid="25" name="search markings 4" tags="" position="400,1400" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 You kneel down beside the corpse, bracing yourself against the stench again, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
@@ -281,6 +334,8 @@ There is so much to consider, and a great deal of it flies in the face of what y
 
 </tw-passagedata><tw-passagedata pid="26" name="Examine wounds 5" tags="" position="1200,1400" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You lean in close to the victims torn apart stomach, holding your breath in a further attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
 You know that when werewolves kill, it is typically to feed. Given that none of the intestines appear to be consumed, you wonder if perhaps this isn&#39;t the work of something other than a werewolf. Could it be that the creature was interrupted before it could feed? But if that was the case, why isn&#39;t there a witness? 
@@ -291,6 +346,8 @@ And yet you cannot shake the small prints you discovered. Perhaps this //is// a 
 
 [[Consider what you&#39;ve learned|results less sus]]</tw-passagedata><tw-passagedata pid="27" name="Results more sus" tags="" position="500,1700" size="100,100">&#39;&#39;A Murderer or a Werewolf?&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You ponder what you&#39;ve discovered here in the woodshed. While there were indeed abnormal prints in the mud, they didn&#39;t quite match what you&#39;ve seen with prior werewolves. The other evidence you found leads you disinclined towards the idea of a werewolf- the lack of fur in present in any of the wounds or bite marks on the body, coupled with the fact none of the corpse was apparently eaten suggest someone attempting a mimicry. You wonder... could the woodsman Dirk having anything to do with this?
 
 Your thoughts grow dark. It is still your task to render a judgement for the Duke, so you must find still the killer, whoever it might be. Time to speak to the witnesses.
@@ -298,6 +355,8 @@ Your thoughts grow dark. It is still your task to render a judgement for the Duk
 [[But who shall you speak with first?|Witness 2 selection]]
 
 (set:$dirkSus to $dirkSus + 1)</tw-passagedata><tw-passagedata pid="28" name="results less sus" tags="" position="850,1625" size="100,100">&#39;&#39;A Child Werewolf&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 There can be no denying it. The small but bestial footprints, the lack of fur or bite marks on the body, and the absence of any consumption of internal organs- you are dealing with an immature werewolf. To the best of your knowledge, such a creature has never been encountered before, but you recall reading a treatise theorizing their existence. After all, werewolves must turn for the first time at some point in their lives. 
 
@@ -317,6 +376,8 @@ This will make your investigation more difficult though. If it is a child, they 
  
  (set: $time to $time + 1)</tw-passagedata><tw-passagedata pid="30" name="&quot;Did you hear anything the night of the killing?&quot;" tags="" position="1625,400" size="100,100">&#39;&#39;Slept Like a Log&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde considers the question for a moment.
 
 &quot;No, I do nay think I heard much of anything. I&#39;m a heavy sleeper. And certainly I think I would have heard the howls of a werewolf out in the night, even despite that. No, the night was quiet, there weren&#39;t no noise from out back. You can bet that.&quot;
@@ -330,6 +391,8 @@ You decide to ask another question, but are mindful of Matilde&#39;s attitude, s
 [[&quot;Have any suspicious characters stayed here recently?&quot;|Characters 3]]
 
 [[&quot;Tell me what you know about the victim.&quot;|Victim 3]]</tw-passagedata><tw-passagedata pid="31" name="&quot;Have any suspicious characters stayed here recently?&quot;" tags="" position="1750,400" size="100,100">&#39;&#39;No One But You&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 The innkeeper scoffs at your question.
 
@@ -357,6 +420,8 @@ You contemplate the innkeeper&#39;s answer. You wonder if perhaps she knows more
 
 [[&quot;Tell me what you know about the victim.&quot;|Victim 2]]</tw-passagedata><tw-passagedata pid="33" name="&quot;Tell me what you know about the victim.&quot;" tags="" position="1875,400" size="100,100">&#39;&#39;A Villainous Character&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde scowls at your question.
 
 &quot;Hardly a victim ol&#39; Ragvald. A right bastard. A cretin. Man kicked puppies for fun. Oh, I see yer face, ye don&#39;t believe me, but I seen him done it with mine own eyes. No, he was a foul, penurious fella, awful to the other townsfolk. I&#39;ll tell ye, his death, whatever the cause, was a blessin&#39; to us. If I were you, I&#39;d call it a day now. The townsfolk are glad to be rid of him, &#39;cept the burgermeister, who liked his coin.&quot;
@@ -368,6 +433,8 @@ Matilde&#39;s candor startles you. If this man is so hated, is it possible he co
 [[&quot;Did you hear anything the night of the killing?&quot;|night 4]]
 
 [[&quot;Have any suspicious characters stayed here recently?&quot;|Characters 4]]</tw-passagedata><tw-passagedata pid="34" name="&quot;You know more about were-folk in the town, don&#39;t you?&quot;" tags="" position="1250,900" size="100,100">&#39;&#39;A Child&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde&#39;s demeanor immediately shifts at this question. She grows flustered- opening her mouth to speak before closing it and stammering, before finally regaining her composure.
 
@@ -381,6 +448,8 @@ Matilde starts to cry at this, and you take the opportunity to depart the inn.
 (set: $wolfKnowledge to $wolfKnowledge + 1)
 
 (set: $alkaKnowledge to $alkaKnowledge + 1)</tw-passagedata><tw-passagedata pid="35" name="night 2" tags="" position="1325,700" size="100,100">&#39;&#39;Slept Like a Log&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde considers the question for a moment.
 
@@ -398,6 +467,8 @@ Matilde seems to tire of your questioning. Ask your final question.
 
 </tw-passagedata><tw-passagedata pid="36" name="Characters 2" tags="" position="1075,700" size="100,100">&#39;&#39;No One But You&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 The innkeeper scoffs at your question.
 
 &quot;Suspicious characters? Kiddo, no one comes out here. We&#39;re on our own. This town is close knit, and we do nay take kindly to folk comin&#39; round stirrin&#39; up trouble. And, as far as I can see, yer the only one stirring things up around here. No, Ragvald&#39;s death was chance happenstance, that&#39;s it.&quot;
@@ -409,6 +480,8 @@ The innkeeper&#39;s rebuttal is strangely aggressive. Perhaps the killing has pu
 [[&quot;Tell me what you know about the victim.&quot;|Victim final]]
 
 [[&quot;Did you hear anything the night of the killing?&quot;|Night final]]</tw-passagedata><tw-passagedata pid="37" name="Victim 2" tags="" position="1200,700" size="100,100">&#39;&#39;A Villainous Character&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde scowls at your question.
 
@@ -422,6 +495,8 @@ Matilde&#39;s candor startles you. If this man is so hated, is it possible he co
 
 [[&quot;Have any suspicious characters stayed here recently?&quot;|Characters final]]</tw-passagedata><tw-passagedata pid="38" name="Work of wolf 2" tags="" position="1450,700" size="100,100">&#39;&#39;Heated Denial&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde shakes her head vigorously. 
 
 &quot;Nay, there ain&#39;t no were-folk in these parts. The Crentwood don&#39;t play home to creatures of that sort. I don&#39;t know why the burgermeister even sent for ya. Ragvald was probably killed by a bear, and we should be lookin&#39; for it. No, there ain&#39;t no were-folk here.&quot;
@@ -434,6 +509,8 @@ You contemplate the innkeeper&#39;s answer. You wonder if perhaps she knows more
 
 [[&quot;Tell me what you know about the victim.&quot;|Victim final]]</tw-passagedata><tw-passagedata pid="39" name="Characters 3" tags="" position="1575,700" size="100,100">&#39;&#39;No One But You&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 The innkeeper scoffs at your question.
 
 &quot;Suspicious characters? Kiddo, no one comes out here. We&#39;re on our own. This town is close knit, and we do nay take kindly to folk comin&#39; round stirrin&#39; up trouble. And, as far as I can see, yer the only one stirring things up around here. No, Ragvald&#39;s death was chance happenstance, that&#39;s it.&quot;
@@ -445,6 +522,8 @@ The innkeeper&#39;s rebuttal is strangely aggressive. Perhaps the killing has pu
 (if: $time is 1)[[&quot;Do you think this was the work of a werewolf?&quot;|Work of wolf final]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1)  [[&quot;I know about the child werewolf.&quot;|Matilde Revelation]]
 </tw-passagedata><tw-passagedata pid="40" name="Victim 3" tags="" position="1700,700" size="100,100">&#39;&#39;A Villainous Character&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde scowls at your question.
 
 &quot;Hardly a victim ol&#39; Ragvald. A right bastard. A cretin. Man kicked puppies for fun. Oh, I see yer face, ye don&#39;t believe me, but I seen him done it with mine own eyes. No, he was a foul, penurious fella, awful to the other townsfolk. I&#39;ll tell ye, his death, whatever the cause, was a blessin&#39; to us. If I were you, I&#39;d call it a day now. The townsfolk are glad to be rid of him, &#39;cept the burgermeister, who liked his coin.&quot;
@@ -454,6 +533,8 @@ Matilde&#39;s candor startles you. If this man is so hated, is it possible he co
 (if: $time is 1)[[&quot;Do you think this was the work of a werewolf?&quot;|Work of wolf final]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1)  [[&quot;I know about the child werewolf.&quot;|Matilde Revelation]]
 
 [[&quot;Have any suspicious characters stayed here recently?&quot;|Characters final]]</tw-passagedata><tw-passagedata pid="41" name="Victim final" tags="" position="1850,900" size="100,100">&#39;&#39;A Villainous Character&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde scowls at your question.
 
@@ -469,6 +550,8 @@ But the time for questions is over, Matilde is done with your questions, and is 
 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]</tw-passagedata><tw-passagedata pid="42" name="Characters final" tags="" position="1475,900" size="100,100">&#39;&#39;No One But You&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 The innkeeper scoffs at your question.
 
 &quot;Suspicious characters? Kiddo, no one comes out here. We&#39;re on our own. This town is close knit, and we do nay take kindly to folk comin&#39; round stirrin&#39; up trouble. And, as far as I can see, yer the only one stirring things up around here. No, Ragvald&#39;s death was chance happenstance, that&#39;s it.&quot;
@@ -480,6 +563,8 @@ The innkeeper&#39;s rebuttal is strangely aggressive. Perhaps the killing has pu
 (if: $time is 1) + (if: $peopleTalk is 2)[[The time for interviews is over. It is time to investigate the site of the attack.]]
 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]</tw-passagedata><tw-passagedata pid="43" name="Work of wolf 3" tags="" position="1825,700" size="100,100">&#39;&#39;Heated Denial&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde shakes her head vigorously. 
 
@@ -493,6 +578,8 @@ You contemplate the innkeeper&#39;s answer. You wonder if perhaps she knows more
 
 [[&quot;Tell me what you know about the victim.&quot;|Victim final]]</tw-passagedata><tw-passagedata pid="44" name="night 3" tags="" position="1950,700" size="100,100">&#39;&#39;Slept Like a Log&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde considers the question for a moment.
 
 &quot;No, I do nay think I heard much of anything. I&#39;m a heavy sleeper. And certainly I think I would have heard the howls of a werewolf out in the night, even despite that. No, the night was quiet, there weren&#39;t no noise from out back. You can bet that.&quot;
@@ -505,6 +592,8 @@ Matilde seems to tire of your questioning. Ask your final question.
 
 (if: $time is 1)[[&quot;Do you think this was the work of a werewolf?&quot;|Work of wolf final]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1)  [[&quot;I know about the child werewolf.&quot;|Matilde Revelation]]</tw-passagedata><tw-passagedata pid="45" name="victim 4" tags="" position="2075,700" size="100,100">&#39;&#39;A Villainous Character&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde scowls at your question.
 
 &quot;Hardly a victim ol&#39; Ragvald. A right bastard. A cretin. Man kicked puppies for fun. Oh, I see yer face, ye don&#39;t believe me, but I seen him done it with mine own eyes. No, he was a foul, penurious fella, awful to the other townsfolk. I&#39;ll tell ye, his death, whatever the cause, was a blessin&#39; to us. If I were you, I&#39;d call it a day now. The townsfolk are glad to be rid of him, &#39;cept the burgermeister, who liked his coin.&quot;
@@ -514,6 +603,8 @@ Matilde&#39;s candor startles you. If this man is so hated, is it possible he co
 (if: $time is 1)[[&quot;Do you think this was the work of a werewolf?&quot;|Work of wolf final]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1)  [[&quot;I know about the child werewolf.&quot;|Matilde Revelation]]
 
 [[&quot;Did you hear anything the night of the killing?&quot;|Night final]]</tw-passagedata><tw-passagedata pid="46" name="Work of wolf final" tags="" position="2025,900" size="100,100">&#39;&#39;Heated Denial&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde shakes her head vigorously. 
 
@@ -526,6 +617,8 @@ You contemplate the innkeeper&#39;s answer. You wonder if perhaps she knows more
 (if: $time is 1) + (if: $peopleTalk is 2)[[The time for interviews is over. It is time to investigate the site of the attack.]]
 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]</tw-passagedata><tw-passagedata pid="47" name="Night final" tags="" position="1675,900" size="100,100">&#39;&#39;Slept Like a Log&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde considers the question for a moment.
 
@@ -541,6 +634,8 @@ But the time for questions is over, Matilde is done with your questions, and is 
 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]</tw-passagedata><tw-passagedata pid="48" name="Work of the wolf 4" tags="" position="2200,700" size="100,100">&#39;&#39;Heated Denial&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Matilde shakes her head vigorously. 
 
 &quot;Nay, there ain&#39;t no were-folk in these parts. The Crentwood don&#39;t play home to creatures of that sort. I don&#39;t know why the burgermeister even sent for ya. Ragvald was probably killed by a bear, and we should be lookin&#39; for it. No, there ain&#39;t no were-folk here.&quot;
@@ -552,6 +647,8 @@ You contemplate the innkeeper&#39;s answer. You wonder if perhaps she knows more
 [[&quot;Did you hear anything the night of the killing?&quot;|Night final]]
 
 [[&quot;Have any suspicious characters stayed here recently?&quot;|Characters final]]</tw-passagedata><tw-passagedata pid="49" name="night 4" tags="" position="2325,700" size="100,100">&#39;&#39;Slept Like a Log&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 Matilde considers the question for a moment.
 
@@ -565,6 +662,8 @@ Matilde seems to tire of your questioning. Ask your final question.
 
 (if: $time is 1)[[&quot;Do you think this was the work of a werewolf?&quot;|Work of wolf final]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1)  [[&quot;I know about the child werewolf.&quot;|Matilde Revelation]]
 </tw-passagedata><tw-passagedata pid="50" name="Characters 4" tags="" position="2450,700" size="100,100">&#39;&#39;No One But You&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 The innkeeper scoffs at your question.
 
@@ -607,6 +706,8 @@ You are headed for the woodshed when a great rumble of thunder shakes the ground
 
 (set: $time to $time + 1)</tw-passagedata><tw-passagedata pid="56" name="&quot;Tell me how you found the body.&quot;" tags="" position="4200,300" size="100,100">&#39;&#39;Testing Their Patience&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 The fletcher rolls their eyes at your question.
 
 &quot;Does it need explaining? I went to the woodshed to get materials for more arrows. Of course, I wasn&#39;t expecting Ragvald&#39;s corpse. I suppose it was unpleasant in a visceral sense, but I was not displeased to see the man dead. I&#39;m not too bothered though; we live on the edge of the Crentwood, which is filled with wild animals. I&#39;m more shocked this sort of thing doesn&#39;t happen more often.&quot;
@@ -616,6 +717,8 @@ Alka turns their focus to their work once again; you are losing whatever small b
 [[&quot;Can you tell me about the victim?&quot;|Tell me 2]]
 
 (if: $alkaKnowledge is 1) [[&quot;I know about the child.&quot;]](if: $time is 2) + (if: $wolfKnowledge &gt; 0)[[I know about the child werewolf.|Alka Revelation]]</tw-passagedata><tw-passagedata pid="57" name="&quot;Can you tell me about the victim?&quot;" tags="" position="4425,275" size="100,100">&#39;&#39;A Veiled Threat?&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 Alka gives you a puzzled look.
 
@@ -627,6 +730,8 @@ You&#39;re somewhat taken aback at the vitriol with which the fletcher speaks ab
 
 (if: $alkaKnowledge is 1) [[&quot;I know about the child.&quot;]](if: $time is 2) + (if: $wolfKnowledge &gt; 0)[[I know about the child werewolf.|Alka Revelation]]</tw-passagedata><tw-passagedata pid="58" name="&quot;I know about the child.&quot;" tags="" position="4025,300" size="100,100">&#39;&#39;Caught Off-Guard&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Alka stops what they are doing and stares at you. You have their full attention now.
 
 &quot;Who- who told you? No, it matters not. I love them, but Matilde and Dirk are both terrible at keeping things to themselves. I suppose there is no point in hiding it. There is... a child, a girl, Elha, who is under my care. She was orphaned some time ago, and I have the means to help take care of her, with some assistance from Matilde and Dirk. Yes, underneath his gruff exterior, Dirk is a kind soul. Anyway, she- well, I suppose it&#39;s best if I just show you.&quot;
@@ -634,6 +739,8 @@ Alka stops what they are doing and stares at you. You have their full attention 
 Alka rises and indicates that you should follow.
 
 [[Follow Alka]]</tw-passagedata><tw-passagedata pid="59" name="&quot;Have you ever seen anything strange out in the woods?&quot;" tags="" position="3050,400" size="100,100">&#39;&#39;A Witness Worked Up&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 Your question is met with a hearty guffaw.
 
@@ -645,6 +752,8 @@ Dirk&#39;s mirth shifts into anger the longer he speaks, Perhaps you should have
 
 (if: $time is 1)[[&quot;Do you think that this killing was the work of a werewolf?&quot;]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1) [[&quot;I know about the child werewolf.&quot;|Dirk Revelation]]</tw-passagedata><tw-passagedata pid="60" name="&quot;What do you know about the victim?&quot;" tags="" position="3375,400" size="100,100">&#39;&#39;A Damning Indictment&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Dirk glares at you.
 
 &quot;What I //know// about the &#39;victim?&#39; He weren&#39;t no victim. I&#39;m sure everyone else will tell ye that. And, fer the record, I know more that ye&#39;d care to know about him. The man was basically a devil, hoardin&#39; his money, lordin&#39; over the whole town. Usin&#39; it as an excuse to bully who he wanted, to get away with crime- the burgermeister was in his pocket. Ay, I&#39;ll say it, I&#39;m glad the fucker&#39;s dead. Ye won&#39;t find many who&#39;ll go that far, but I gladly will. His kind might fit in in your yuppy cities, but out here, the livin&#39;s hard. We ought to all work together, and he didn&#39;t. The rat fucked around, and he found out, I&#39;d say. //That&#39;s// what I know about the &#39;victim.&#39;&quot;
@@ -655,6 +764,8 @@ Dirk practically spits the last word. The woodsman makes no attempt to hide the 
 
 (if: $time is 1)[[&quot;Do you think that this killing was the work of a werewolf?&quot;]](if: $time is 2) + (if: $wolfKnowledge &gt; 0) + (if: $alkaRequest is &lt; 1) [[&quot;I know about the child werewolf.&quot;|Dirk Revelation]]</tw-passagedata><tw-passagedata pid="61" name="&quot;Do you think that this killing was the work of a werewolf?&quot;" tags="" position="2775,425" size="100,100">&#39;&#39;On the Right Track&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Dirk tries very hard to keep a neutral face at your question, but you can tell it has impacted him.
 
 &quot;A... werewolf? No, no, there ain&#39;t such beasts in these parts. And, if there were, certainly not involved in this killin&#39;. No, there may be creatures in these parts, but certainly no werewolves. But no one who can change form... no, no, there ain&#39;t none like that in this town.&quot;
@@ -664,6 +775,8 @@ For one so brash just moments ago, this question has set the man&#39;s nerves al
 [[&quot;You know about a werewolf in town, don&#39;t you?&quot;]]
 
 </tw-passagedata><tw-passagedata pid="62" name="Tell me 2" tags="" position="4300,475" size="100,100">&#39;&#39;A Veiled Threat?&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 Alka gives you a puzzled look.
 
@@ -676,6 +789,8 @@ You&#39;re somewhat taken aback at the vitriol with which the fletcher speaks ab
 (if: $time is 1) + (if: $peopleTalk is 2)[[The time for interviews is over. It is time to investigate the site of the attack.]]
 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]</tw-passagedata><tw-passagedata pid="63" name="Body 2" tags="" position="4525,475" size="100,100">&#39;&#39;Testing Their Patience&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 The fletcher rolls their eyes at your question.
 
@@ -695,6 +810,8 @@ Leaving Alka&#39;s workshop, you think on who you might call upon next. You coul
 
 [[Speak with Dirk outside the tavern|Meeting Dirk]]</tw-passagedata><tw-passagedata pid="65" name="Follow Alka" tags="" position="4025,475" size="100,100">&#39;&#39;The Child&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Elha.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You proceed after the fletcher into the back of their workshop, which is a small living space. Sitting on the floor, playing with some carved wooden toys, is a young girl, probably no more than ten years old. At your entry she rises and gives a little curtsy.
 
 &quot;Elha, cut that out. Matilde&#39;s been teaching her &#39;proper&#39; manners, but I&#39;ve told her there&#39;s no need for that sort of thing. She can greet you however she wants. Anyway, this is &#39;the child&#39; you were told about. She was out last night, playing around behind Matilde&#39;s inn or something of the sort, when as I understand Ragvald happened upon her. He&#39;d been drinking and started rambling on about how &#39;children ought to know their place&#39; and tried to beat her. He was a truly horrible person. I guess Elha... well, maybe I should let her tell the story herself.&quot;
@@ -702,6 +819,8 @@ You proceed after the fletcher into the back of their workshop, which is a small
 Alka turns to Elha and gives her a nod to indicate she should speak.
 
 [[Listen to the girl.]]</tw-passagedata><tw-passagedata pid="66" name="Listen to the girl." tags="" position="4050,625" size="100,100">&#39;&#39;A Grim Tale&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Elha.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 The girl, Elha, begins to speak, hesitantly at first, and then growing in confidence as her story goes on.
 
@@ -714,6 +833,8 @@ Despite the horrific naturre of the story, Elha has returned to a somewhat cheer
 [[Follow Alka out of the room]]
 
 (set: $wolfKnowledge to $wolfKnowledge + 1)</tw-passagedata><tw-passagedata pid="67" name="Follow Alka out of the room" tags="" position="4200,750" size="100,100">&#39;&#39;A Request for Mercy&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 You return with Alka to the main room of the workshop, where they turn to you with a pleading expression.
 
@@ -731,6 +852,8 @@ You cross town from Alka&#39;s workshop towards the woodshed where Elha killed R
 
 (set: $time to $time + 1)</tw-passagedata><tw-passagedata pid="69" name="What you know 2" tags="" position="3075,550" size="100,100">&#39;&#39;A Damning Indictment&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Dirk glares at you.
 
 &quot;What I //know// about the &#39;victim?&#39; He weren&#39;t no victim. I&#39;m sure everyone else will tell ye that. And, fer the record, I know more that ye&#39;d care to know about him. The man was basically a devil, hoardin&#39; his money, lordin&#39; over the whole town. Usin&#39; it as an excuse to bully who he wanted, to get away with crime- the burgermeister was in his pocket. Ay, I&#39;ll say it, I&#39;m glad the fucker&#39;s dead. Ye won&#39;t find many who&#39;ll go that far, but I gladly will. His kind might fit in in your yuppy cities, but out here, the livin&#39;s hard. We ought to all work together, and he didn&#39;t. The rat fucked around, and he found out, I&#39;d say. //That&#39;s// what I know about the &#39;victim.&#39;&quot;
@@ -744,6 +867,8 @@ Dirk practically spits the last word. The woodsman makes no attempt to hide the 
 (if: $time is 2) + (if: $peopleTalk is 2) [[Your investigation is concluded. It is time to consider all you have learned.|End game]]
 
 (set: $dirkSus to $dirkSus + 1)</tw-passagedata><tw-passagedata pid="70" name="Suspicious woods 2" tags="" position="3375,550" size="100,100">&#39;&#39;A Witness Worked Up&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 Your question is met with a hearty guffaw.
 
@@ -774,6 +899,8 @@ The rain has eased somewhat slightly as you ponder all that you have learned, an
 (if: $wolfKnowledge is &gt;3)[[Sentence Elha to death]](if: $dirkSus is 2) + (if: $wolfKnowledge is &lt; 2)[[Sentence Dirk to death]]
 </tw-passagedata><tw-passagedata pid="73" name="&quot;You know about a werewolf in town, don&#39;t you?&quot;" tags="" position="2775,550" size="100,100">&#39;&#39;A Promising Lead&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Dirk, for all his big talk, caves under the slightest bit of pressure.
 
 &quot;Damn it all, fine, I&#39;ll tell ye. But, please, she&#39;s not- she&#39;s not responsible fer her actions. She&#39;s just a child. Ay, a wee thing. Alka, the fletcher, they&#39;re keepin&#39; an eye on her. The girl, she&#39;s destined for better things, better places than this. She&#39;s so bright. Don&#39;t let this place be her end, I&#39;m beggin&#39; ya. Don&#39;t let the death of that bastard Ragvald be the end of her too, I&#39;m pleadin&#39; with ya. Talk to Alka, please, they&#39;ll tell ya what ya need to know.&quot;
@@ -800,6 +927,8 @@ Regretfully, you make your way from the tavern and in the direction of the woods
 
 [[Proceed to the scene of the killing]]</tw-passagedata><tw-passagedata pid="76" name="Enter the woodshed" tags="" position="4100,1100" size="100,100">&#39;&#39;A Grisly Scene&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_Faded_blurry_prints.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You approach the woodshed and gently push open the door. Immediately you are hit by the stench: while the rain does a little to mask the smell,, this corpse has been here rotting for almost two days now. It does not help that the poor man&#39;s bowels have been ripped apart. You turn away for a moment and hold back a retch. You steel yourself and face the scene again. 
 
 The corpse of Ragvald Burke is slumped against a pile of chopped logs. The rain has turned the dirt floor of the shed into mud- if there were any prints to examine, they are long gone. You must get this matter sorted before the storm worsens and you are unable to tell anything from the scene.&quot;
@@ -808,6 +937,8 @@ The corpse of Ragvald Burke is slumped against a pile of chopped logs. The rain 
 
 [[Examine the corpse&#39;s wounds|Wounds]]</tw-passagedata><tw-passagedata pid="77" name="Alka Revelation" tags="" position="4800,200" size="100,100">&#39;&#39;Caught Off-Guard&#39;&#39;
 
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
+
 Alka stops what they are doing and stares at you. You have their full attention now.
 
 &quot;How do you know? Who- who told you? No, it matters not. I love them, but Matilde and Dirk are both terrible at keeping things to themselves. And, if you&#39;ve figured it out yourself, I suppose there is no point in hiding it. There is... a child, a girl, Elha, who is under my care. She was orphaned some time ago, and I have the means to help take care of her, with some assistance from Matilde and Dirk. Yes, underneath his gruff exterior, Dirk is a kind soul. Anyway, she- well, I suppose it&#39;s best if I just show you.&quot;
@@ -815,6 +946,8 @@ Alka stops what they are doing and stares at you. You have their full attention 
 Alka rises and indicates that you should follow.
 
 [[Follow Alka|Follow Alka 2]]</tw-passagedata><tw-passagedata pid="78" name="Matilde Revelation" tags="" position="2400,900" size="100,100">&#39;&#39;A Breakthrough&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/matilde_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 As soon as you utter the words, Matilde seems on the verge of tears.
 
@@ -828,6 +961,8 @@ Matilde can no longer hold back her tears now, and is bawling before you. Seeing
 
 (set: $wolfKnowledge to $wolfKnowledge +1)</tw-passagedata><tw-passagedata pid="79" name="Corpse" tags="" position="3900,1200" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_Faded_blurry_prints.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 (if: $wolfKnowledge is 0) [You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. But that sort of savagery is... disconcerting.] (if: $wolfKnowledge is 1 or 2)[You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. That would track with what you&#39;ve come to suspect is the case: that a child werewolf is the culprit. Indeed, there is no fur in the wounds, nor bite marks, nothing that suggests a mature werewolf is at play.] (if:$wolfKnowledge is &gt;2)[You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. A lack of fur in any of the wounds, nor bite marks elsewhere on the body track with Elha&#39;s story. As a young werewolf, she&#39;d be less likely to shed, and since she was not attacking to feed, less likely to bite.]
@@ -835,6 +970,8 @@ You peer closer at the cuts, hoping to find //something// that can point you in 
 The rain is coming down in sheets now, the mud rapidly turning into a pool of water. You ought to finish your investigation quickly.
 
 [[Examine the corpse&#39;s wounds|Wounds 2]]</tw-passagedata><tw-passagedata pid="80" name="Wounds" tags="" position="4300,1200" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_Faded_blurry_prints.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 (if: $wolfKnowledge is 0) [You lean in close to the victims torn apart stomach, holding your breath in attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -846,6 +983,8 @@ The rain is coming down in sheets now, the mud rapidly turning into a pool of wa
 
 [[Search for werewolf markings on the corpse|Corpse 2]]</tw-passagedata><tw-passagedata pid="81" name="Corpse 2" tags="" position="4300,1350" size="100,100">&#39;&#39;Small and Bloody&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_Faded_blurry_prints.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 (if: $wolfKnowledge is 0) [You kneel down beside the corpse, bracing yourself against the stench again, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. You find yourself puzzled. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. 
 
 You peer closer at the cuts, hoping to find //something// that can point you in the correct direction. Yet there is no fur left in the wounds, no bite marks, nothing that might give you a concrete idea of what you&#39;re dealing with. You find yourself wondering if these cuts and slashes could have potentially been made by knives. It&#39;s not impossible. And coupled with the lack of consumption of any organs, it could even be probable. But if that were true... you dare not consider who would do such a thing.] (if: $wolfKnowledge is 1 or 2)[You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. That would track with what you&#39;ve come to suspect is the case: that a child werewolf is the culprit. Indeed, there is no fur in the wounds, nor bite marks, nothing that suggests a mature werewolf is at play. Coupled with the lack of consumption of organs, it&#39;s certainly behavior that deviates from your experience.] (if:$wolfKnowledge is &gt;2)[You kneel down beside the corpse, bracing yourself against the stench, leaning in close and examining the jagged cuts and slashes on Ragvald&#39;s body. While these markings are certainly deeper than one might expect from a regular wolf, they are not quite as large or as deep as you&#39;ve seen from werewolf attacks. A lack of fur in any of the wounds, nor bite marks elsewhere on the body track with Elha&#39;s story. As a young werewolf, she&#39;d be less likely to shed, and since she was not attacking to feed, less likely to bite- the lack of feeding on Ragvald&#39;s organs only supports this understanding.]
@@ -854,6 +993,8 @@ There is nothing left for you here now. The rain now is practically torrential. 
 
  [[Your investigation is concluded. It is time to consider all you have learned.|End game]]
 </tw-passagedata><tw-passagedata pid="82" name="Wounds 2" tags="" position="3900,1350" size="100,100">&#39;&#39;Foul- and Uneaten&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/shed_Faded_blurry_prints.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 (if: $wolfKnowledge is 0) [You lean in close to the victims torn apart stomach, holding your breath in a further attempt to ward off the smell (it does not work). With a delicate finger, you sift through the fetid pile of intestines. Though thoroughly torn apart, all the organs appear to be more or less present, a fact that raises some concern.
 
@@ -865,6 +1006,8 @@ There is nothing left for you here now. The rain now is practically torrential. 
 
  [[Your investigation is concluded. It is time to consider all you have learned.|End game]]
 </tw-passagedata><tw-passagedata pid="83" name="Dirk Revelation" tags="" position="3600,400" size="100,100">&#39;&#39;Stonewalled&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 Dirk grits his teeth as you make your declaration. He stares at you for a long while, and you begin to wonder if he might not have heard you over the rain. As you open your mouth to repeat what you said, Dirk finally speaks.
 
@@ -891,6 +1034,8 @@ You stand outside of the inn, absolutely drenched now, and ponder what Matilde h
 
 [[Your investigation has reached its end- it is time to consider all that you have learned|End game]]</tw-passagedata><tw-passagedata pid="87" name="Follow Alka 2" tags="" position="5000,300" size="100,100">&#39;&#39;The Child&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Elha.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 You proceed after the fletcher into the back of their workshop, which is a small living space. Sitting on the floor, playing with some carved wooden toys, is a young girl, probably no more than ten years old. At your entry she rises and gives a little curtsy.
 
 &quot;Elha, cut that out. Matilde&#39;s been teaching her &#39;proper&#39; manners, but I&#39;ve told her there&#39;s no need for that sort of thing. She can greet you however she wants. Anyway, this is &#39;the child&#39; you were told about. She was out last night, playing around behind Matilde&#39;s inn or something of the sort, when as I understand Ragvald happened upon her. He&#39;d been drinking and started rambling on about how &#39;children ought to know their place&#39; and tried to beat her. He was a truly horrible person. I guess Elha... well, maybe I should let her tell the story herself.&quot;
@@ -898,6 +1043,8 @@ You proceed after the fletcher into the back of their workshop, which is a small
 Alka turns to Elha and gives her a nod to indicate she should speak.
 
 [[Listen to the girl|Listen to Elha 2]]</tw-passagedata><tw-passagedata pid="88" name="Listen to Elha 2" tags="" position="5000,425" size="100,100">&#39;&#39;A Grim Tale&#39;&#39;
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Elha.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 The girl, Elha, begins to speak, hesitantly at first, and then growing in confidence as her story goes on.
 
@@ -910,6 +1057,8 @@ Despite the horrific naturre of the story, Elha has returned to a somewhat cheer
 [[Follow Alka out of the room|Follow Alka out]]
 
 (set: $wolfKnowledge to $wolfKnowledge + 1)</tw-passagedata><tw-passagedata pid="89" name="Follow Alka out" tags="" position="5000,550" size="100,100">&#39;&#39;A Request for Mercy&#39;&#39;
+
+(if: $time is 2)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;](else:)[&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Alka_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;]
 
 You return with Alka to the main room of the workshop, where they turn to you with a pleading expression.
 
@@ -931,9 +1080,13 @@ Although you are fairly certain you know the details of what exactly transpired 
 
 [[Speak to Dirk outside the tavern|Meeting Dirk]]</tw-passagedata><tw-passagedata pid="91" name="Spare Elha (Canon)" tags="" position="1800,2250" size="100,100">&#39;&#39;Mercy Prevails&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/Elha.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 The evidence is undeniable. Elha, the sweet little girl, is a werewolf. It’s unlike anything you’ve ever encountered before- all the other werewolves you’ve seen were grown men and women, sometimes ragged, wild people living in the wilderness, other times they were ravenous and crazed in the poorer parts of towns and cities. Your duty to the Duke demands you kill this child, if not just for the fact that she is a werewolf, but also for the fact she has already killed. And yet, she acted in self-defense, transforming in a moment of desperation, killing a man who threatened to beat her, a man hated by the whole of the town. In her child’s mind, she had done nothing wrong- indeed, to many in the town, she had done nothing wrong. 
 
 You know in the depths of your heart, you cannot sentence this girl to death. Beyond even your own morals, who knows how this small town would react to the decision to sentence a child to death. And so you concoct a story to hide the girl’s secret. You let the burgermeister know that Ragvald Burke, a man hated by almost all in the community, just happened to be mauled by a bear in the night, and that the forests ought to be better patrolled. The burgermeister is both disappointed and pleased- there is no culprit for him to blame, but also no supernatural beast stalking his town. 
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 And with that, you take your leave, as the rain lets up and darkness begins to fall. You do not know what will become of Elha; perhaps the townsfolk who know her secret will raise her well, and help her avoid the fate that befalls others in her position. After a long night’s journey, you return to the Duke of Crentwood. You are congratulated for your work, despite the lack of werewolves, and the matter is considered closed. You can only hope it stays that way.
 
@@ -947,6 +1100,8 @@ You make your way to the burgermeister and explain the situation to him. Despite
 
 Putting a child’s head on a spike for an action most of the town considered a service is simply too much. The crowd, furious, charges you and the burgermeister, drowning you in a flurry of fists. There will be blood for the death of Ragvald- that of you and the burgermeister. You take blow after blow, until no part of you is unscathed, and hear the screams of the burgermeister as the crowd tears him apart. Eventually, the frenzy dies, and you lay upon the cold ground, the life fading from your limbs. The last thing you see, as the rain lets up and darkness begins to fall, is Elha’s sobbing face looking down at you, before Matilde and Alka lead her away. 
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town_darker.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 And so your story ends.
 
 [[Begin Anew|Opening]]</tw-passagedata><tw-passagedata pid="93" name="Provide the burgermeister with an alternate explanation for the death" tags="" position="1575,2225" size="100,100">&#39;&#39;A Convincing Alternative&#39;&#39;
@@ -955,6 +1110,8 @@ You find yourself in the midst of a conundrum. You are almost certain that the k
 
 You decide to concoct a story for the burgermeister: Ragvald Burke was killed by a bear roaming the Crentwood. Until the beast is found, the townsfolk should lock their doors, and not travel unaccompanied at night. While this is a lie, the advice you have given should help keep the people safe from the beast. And should the actual werewolf ever be caught, you will be long gone. Perhaps if things had gone differently, you might have been able to catch the beast yourself. But for now you must content yourself with the little good you can do.
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 With this advice imparted, you make your way out of town, as the rain lets up, and darkness begins to fall. You have a long night’s journey before you are back home, traveling along the dirt road that runs parallel to the Crentwood. As the night grows darker and darker, you cannot help but fixate on the trees that rise up alongside you. Out here, at the very edge of civilization, it all feels so tenuous, like the great unknown could swallow all of mankind with ease and in an instant. With the unresolved questions of your task weighing on you still, you know it will be a long time before you can sleep well.
 
 But for now, your story ends.
@@ -962,11 +1119,15 @@ But for now, your story ends.
 [[Begin Anew|Opening]]
 </tw-passagedata><tw-passagedata pid="94" name="Spare Dirk" tags="" position="2025,2275" size="100,100">&#39;&#39;Mercy Prevails&#39;&#39;
 
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/dirk_rain_faded.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
+
 Any time someone dies in a suspicious manner in a remote town like this, the townsfolk are liable to attribute it to some sort of supernatural beast, whether it be a werewolf, an empusa, or a strigoi. While that does sometimes end up being the case, this has turned out like many of the other matters you’ve looked into, with a mere man the killer. You have good reason to believe Dirk Ustenfell murdered Ragvald Burke. As a woodsman who frequented the area of the killing, Dirk has the likely experience required to make the killing look like that of an animal- or in this case, a werewolf. It was foolish to assume there was something supernatural at play here; everything else you’ve learned is a distraction. There is a simple murderer afoot.
 
 But, this is a small town, likely close-knit. In accusing Dirk of being a murderer, your actions could have far-reaching consequences- it might even turn the town against you. Perhaps it is better to have some discretion, attribute this killing to something other than a person, or a werewolf. A wild bear, you suppose, could be responsible for such a killing. Yes, that should assuage the townsfolk, give them something to fixate upon. You find the burgermeister and inform him that Ragvald died at the claws of a bear- he might have provoked it somehow, or maybe he was just unlucky. Whatever the case, you advise the woods be better patrolled, and that the townsfolk maintain caution after dark. The burgermeister seems somewhat disappointed- he was hoping for someone he could stick the blame on, but this will do, he supposes.
 
 Before you leave town, you seek out Dirk Ustenfell. You find him as the rain is starting to let up and darkness is beginning to fall. You let the woodsman know you know what he did, but you’ve decided to let the matter pass. He reacts initially with confusion, before giving you a knowing nod- he seems to appreciate your decision,and  assures you nothing of the sort will happen again, before wishing you well on your return journey.
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 With that, you make your way back home and, for now, your story ends.
 
@@ -975,6 +1136,8 @@ With that, you make your way back home and, for now, your story ends.
 Any time someone dies in a suspicious manner in a remote town like this, the townsfolk are liable to attribute it to some sort of supernatural beast, whether it be a werewolf, an empusa, or a strigoi. While that does sometimes end up being the case, this has turned out like many of the other matters you’ve looked into, with a mere man the killer. You have good reason to believe Dirk Ustenfell murdered Ragvald Burke. As a woodsman who frequented the area of the killing, Dirk has the likely experience required to make the killing look like that of an animal- or in this case, a werewolf. It was foolish to assume there was something supernatural at play here; everything else you’ve learned is a distraction. There is a simple murderer afoot.
 
 Your feelings on this matter are strong, and you make your way to the burgermeister, where you relay the results of your investigation. The burgermeister is pleased with your speedy resolution, and summons two burly townsfolk to apprehend Dirk. After a short while, the burgermeister’s men have returned with Dirk, who put up no resistance. When the burgermeister levels the accusations at him, he does not deny the charges, nor does he admit to them. He merely nods, resigning himself to death.
+
+&lt;img src=&quot;https://raltshunter.github.io/ClawsOfTheWeirwater/artAssets/town.png&quot; width=&quot;500&quot; height=&quot;500&quot;&gt;
 
 With that, the burgermeister dismisses you. You need not be here for the man’s execution, he tells you, just relay the news of your success to the Duke. As you depart Dirk and the burgermeister, you notice a small girl nearby, watching the proceedings with a look of despondence. Perhaps she’s someone to whom Dirk is important. It matters not- justice is served. And so, as the rain lets up and darkness begins to fall, you make your way out of town, content in knowing you have done your job well.
 
